@@ -5,7 +5,7 @@ import Paginator from "./Paginator";
 
 import { useEffect, useState } from "react";
 
-function CharacterList( {title } ) {
+function CharacterList({ title }) {
   const [character, setCharacter] = useState([]);
   const [pagination, setPagination] = useState(1); // paginas totales
   const [page, setPage] = useState(1);
@@ -71,12 +71,14 @@ function CharacterList( {title } ) {
                 ></Character>
               ))
             ) : (
-              <p className="uppercase text-2xl font-bold text-neutral-500">NO HAY PERSONAJES</p>
+              <p className="uppercase text-2xl font-bold text-neutral-500">
+                NO HAY PERSONAJES
+              </p>
             )}
           </div>
         </div>
       )}
-      <Paginator setPage={setPage} page={page} pagination={pagination}/>
+      <Paginator setPage={setPage} page={page} pagination={pagination} />
     </>
   );
 }

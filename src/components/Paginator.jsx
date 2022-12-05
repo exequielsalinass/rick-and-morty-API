@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 
-function Paginator( props ) {
+function Paginator(props) {
   return (
     <header className="sticky top-0 z-10 flex h-20 select-none bg-white shadow-sm m-auto">
       <nav className="mx-auto md:flex w-[90%] max-w-[1440px] items-center justify-between">
@@ -27,7 +27,7 @@ function Paginator( props ) {
         </div>
       </nav>
     </header>
-  )
+  );
 }
 
-export default Paginator
+export default Paginator;
