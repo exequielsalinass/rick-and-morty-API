@@ -2,10 +2,10 @@ import React from 'react'
 
 function Paginator( props ) {
   return (
-    <header className="sticky top-0 z-10 flex h-20 select-none bg-white shadow-sm">
-      <nav className="mx-auto flex w-[90%] max-w-[1440px] items-center justify-between">
-        <span className="block text-sm font-bold text-neutral-800">
-          Page: {props.page} of 42
+    <header className="sticky top-0 z-10 flex h-20 select-none bg-white shadow-sm m-auto">
+      <nav className="mx-auto md:flex w-[90%] max-w-[1440px] items-center justify-between">
+        <span className="block text-sm font-bold text-neutral-800 m-2">
+          Page: {props.page} of {props.pagination}
         </span>
         <div className="flex gap-x-2">
           <button

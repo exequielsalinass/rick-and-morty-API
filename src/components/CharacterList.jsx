@@ -59,7 +59,7 @@ function CharacterList( {title } ) {
           </button>
         </div>
       ) : (
-        <div className="bg-red-700">
+        <div className="bg-red-700 ml-2 mr-2">
           <h3 className="text-center font-bold text-xl">{title}</h3>
           <div className="my-4 grid grid-cols-auto gap-4">
             {character.length > 0 ? (

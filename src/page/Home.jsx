@@ -14,8 +14,8 @@ function Home() {
     <>
       <Header />
       <div className="bg-green-600 flex-col columns-2">
-        <CharacterList title={"Personajes #1"} />
-        <CharacterList title={"Personajes #2"} />
+        <CharacterList title={"Characters #1"} />
+        <CharacterList title={"Characters #2"} />
       </div>
       <div className="flex justify-between w-[90%] m-auto">
         {personajesSeleccionados.personaje1 &&
