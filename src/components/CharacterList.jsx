@@ -1,10 +1,11 @@
 import axios from "axios";
 
 import Character from "./Character";
+import Paginator from "./Paginator";
 
 import { useEffect, useState } from "react";
 
-function CharacterList() {
+function CharacterList( {title } ) {
   const [character, setCharacter] = useState([]);
   const [pagination, setPagination] = useState(1); // paginas totales
   const [page, setPage] = useState(1);
@@ -75,6 +76,7 @@ function CharacterList() {
           </div>
         </div>
       )}
+      <Paginator setPage={setPage} page={page} pagination={pagination}/>
     </>
   );
 }

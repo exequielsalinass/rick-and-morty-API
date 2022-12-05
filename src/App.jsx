@@ -1,12 +1,12 @@
-
+import Home from "./page/Home";
+import { ApiProvider } from "./context/ApiProvider";
 
 function App() {
-
   return (
-    <div className="App">
-      
-    </div>
-  )
+    <ApiProvider>
+      <Home />
+    </ApiProvider>
+  );
 }
 
-export default App
+export default App;
