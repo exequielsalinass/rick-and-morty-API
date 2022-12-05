@@ -13,7 +13,7 @@ function Home() {
   return (
     <>
       <Header />
-      <div className="bg-green-600 flex-col columns-2">
+      <div className="flex-col columns-2">
         <CharacterList title={"Characters #1"} />
         <CharacterList title={"Characters #2"} />
       </div>
@@ -22,15 +22,15 @@ function Home() {
         personajesSeleccionados.personaje2 ? (
           <>
             <EpisodesList
-              title={"Episodios Personaje #1"}
+              title={"Character #1 - Only Episodes"}
               personajes={personaje1}
             />
             <EpisodesList
-              title={"Episodios en comun"}
+              title={"Character #1 & 2 - Shared Episodes"}
               personajes={personajes}
             />
             <EpisodesList
-              title={"Episodio Personaje #2"}
+              title={"Character #2 - Only Episodes"}
               personajes={personaje2}
             />
           </>

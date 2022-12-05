@@ -1,7 +1,9 @@
+import { useState } from "react";
 import useApi from "../hook/useApi";
 
 function Character(props) {
   const { setPersonajesSeleccionados } = useApi();
+  const [bg, setBg] = useState(false);
 
   const { name, status, species, image, title, id, origin, location } = props;
 
@@ -16,12 +18,14 @@ function Character(props) {
           ...personaje,
           personaje1: id,
         }));
+    setBg(true);
   };
-
 
   return (
     <article
-      className="cursor-pointer hover:shadow-xl select-none overflow-hidden rounded-md bg-gray-200 p-4 shadow-xl"
+      className={`${
+        bg ? "bg-gray-300" : "bg-gray-200"
+      } cursor-pointer hover:bg-gray-300 hover:transition-colors select-none overflow-hidden rounded-md p-4 shadow-xl"`}
       key={id}
       onClick={() => handleSelect()}
     >

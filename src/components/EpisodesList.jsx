@@ -12,8 +12,8 @@ function EpisodesList({ title, personajes }) {
   // Si la longitud del array no es igual a 2 entonces busco todos los episodios
 
   const getEpisodesList = async () => {
-    const url = `${urlPersonajes}/${personajes}`;
-    const data = await axios(url).then((data) => data.data);
+    const url_episode = `${url}/${personajes}`;
+    const data = await axios(url_episode).then((data) => data.data);
     data.length !== 2 ? setEpisodes(data.episode) : filterEpisodes(data);
     setTimeout(() => {
       setLoading(false);
@@ -72,7 +72,7 @@ function EpisodesList({ title, personajes }) {
       ) : (
         <>
           <section className="md:flex flex-col justify-start items-center w-[30%]">
-            <h3>{title}</h3>
+            <h3 className="uppercase font-bold m-4">{title}</h3>
             <div className="md:flex items-center justify-start flex-wrap">
               {episodes ? (
                 episodes.map((episodio, i) => (
