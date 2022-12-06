@@ -9,7 +9,7 @@
 ## Setup
 
 - git clone https://github.com/exequielsalinass/rick-and-morty-API.git
-- cd rick-and-morty-api-site
+- cd api-rick-and-morty
 - npm install
 - npm run dev
 
