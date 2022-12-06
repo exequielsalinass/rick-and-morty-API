@@ -19,6 +19,9 @@ function Character(props) {
           personaje1: id,
         }));
     setBg(true);
+    setTimeout(() => {
+      setBg(false)
+    }, 6000);
   };
   
 

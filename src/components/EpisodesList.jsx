@@ -79,8 +79,8 @@ function EpisodesList({ title, personajes }) {
                   <Episodes key={i} episodio={episodio} />
                 ))
               ) : (
-                <p className="uppercase text-center font-bold">
-                  Characters do not share episodes
+                <p className="uppercase text-center text-red-600 font-bold">
+                  the characters are the same
                 </p>
               )}
             </div>
