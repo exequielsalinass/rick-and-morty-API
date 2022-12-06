@@ -71,7 +71,7 @@ function EpisodesList({ title, personajes }) {
         </div>
       ) : (
         <>
-          <section className="md:flex flex-col justify-start items-center w-[30%]">
+          <section className="md:flex flex-col justify-start items-center w-[30%] h-auto">
             <h3 className="uppercase font-bold m-4">{title}</h3>
             <div className="md:flex items-center justify-start flex-wrap">
               {episodes ? (
@@ -79,7 +79,9 @@ function EpisodesList({ title, personajes }) {
                   <Episodes key={i} episodio={episodio} />
                 ))
               ) : (
-                <p> NO HAY EPISODIOS</p>
+                <p className="uppercase text-center font-bold">
+                  Characters do not share episodes
+                </p>
               )}
             </div>
           </section>

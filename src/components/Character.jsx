@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useApi from "../hook/useApi";
 
 function Character(props) {
@@ -20,11 +20,12 @@ function Character(props) {
         }));
     setBg(true);
   };
+  
 
   return (
     <article
       className={`${
-        bg ? "bg-gray-300" : "bg-gray-200"
+        bg ? "bg-gray-400" : "bg-gray-200"
       } cursor-pointer hover:bg-gray-300 hover:transition-colors select-none overflow-hidden rounded-md p-4 shadow-xl"`}
       key={id}
       onClick={() => handleSelect()}

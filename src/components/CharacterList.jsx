@@ -72,7 +72,7 @@ function CharacterList({ title }) {
               ))
             ) : (
               <p className="uppercase text-2xl font-bold text-neutral-500">
-                NO HAY PERSONAJES
+                NO CHARACTERS
               </p>
             )}
           </div>
